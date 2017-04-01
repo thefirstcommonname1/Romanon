@@ -1,0 +1,47 @@
+body {
+  background-color: #4286f4;
+  font-family: cursive;
+  font-size: 30px;
+  color: #d64c2c
+}
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+#number {
+  padding: 60px 100px 80px 100px;
+  text-align: center;
+}
+
+#message {
+  padding: 10px 100px 100px 100px;
+  text-align: center
+}
+input {
+  line-height: 2em;
+}
+
+#messagei {
+  line-height: 5em;
+  width: auto;
+}
+
+#submit {
+  text-align: center;
+}
+
+#send {
+    font-family: cursive;
+    background-color: #f4425f;
+    border: none;
+    color: white;
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

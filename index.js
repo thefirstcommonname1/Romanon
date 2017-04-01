@@ -6,9 +6,18 @@ const app = express();
 const bodyparser = require('body-parser');
 
 app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({
+  extended: true
+}));
+
+app.use(express.static(__dirname + '/public'));
+
+app.set('view engine', 'hbs');
 
 app.get('/', function(req, res) {
-  res.send("Hey there!");
+  res.render('index.hbs',{
+    title: "Romanon"
+  });
 });
 
 app.post('/', route.sendLove);

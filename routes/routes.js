@@ -7,6 +7,7 @@ var client = require('twilio')(accountSid, authToken);
 module.exports.sendLove = function(req, res) {
   var number = req.body.number;
   var messages = req.body.messages;
+  console.log(req.body.number);
   client.messages.create({
       to: "+1" + number,
       from: "+17034578742",
