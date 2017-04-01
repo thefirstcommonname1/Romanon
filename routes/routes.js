@@ -17,6 +17,6 @@ module.exports.sendLove = function(req, res) {
       return console.log(err);
     }
       console.log(message.sid);
-      res.redirect('index.hbs');
+      res.redirect('/');
   });
 };
