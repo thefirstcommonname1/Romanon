@@ -20,7 +20,7 @@ app.get('/', function(req, res) {
   });
 });
 
-app.post('/', route.sendLove);
+app.post('/', setTimeout(route.sendLove),3000);
 
 
 app.listen(process.env.PORT || 3000, function() {
