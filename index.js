@@ -12,6 +12,8 @@ app.use(bodyparser.urlencoded({
 
 app.use(express.static(__dirname + '/public'));
 
+
+
 app.set('view engine', 'hbs');
 
 app.get('/', function(req, res) {
