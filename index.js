@@ -21,7 +21,7 @@ app.get('/', function(req, res) {
 });
 
 
-app.post('/', setTimeout(route.sendLove),126100000000);
+app.post('/', route.sendLove);
 
 
 

@@ -8,15 +8,18 @@ module.exports.sendLove = function(req, res) {
   var number = req.body.number;
   var messages = req.body.messages;
   console.log(req.body.number);
-  client.messages.create({
-      to: "+1" + number,
-      from: "+17034578742",
-      body: messages,
-  }, function(err, message) {
-    if (err) {
-      return console.log(err);
-    }
-      console.log(message.sid);
-      res.redirect('/');
-  });
+  setTimeout(function(){
+    client.messages.create({
+        to: "+1" + number,
+        from: "+17034578742",
+        body: messages,
+    }, function(err, message) {
+      if (err) {
+        return console.log(err);
+      }
+        console.log(message.sid);
+        res.redirect('/');
+    });
+  }, 126100000000);
+
 };
